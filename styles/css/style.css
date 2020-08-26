@@ -211,6 +211,10 @@ textarea {
   overflow: hidden;
 }
 
+header .logo {
+  font-family: "Tulpen One", cursive;
+}
+
 body {
   background: palegreen;
 }
