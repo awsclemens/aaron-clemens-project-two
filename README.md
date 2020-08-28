@@ -1,4 +1,45 @@
-2020-08-25 - "read-me created"-AC
+Bar-One website
 
-2020-08-25 - "note on font awesome user icon"
-    - the icon for community in the design for the home page, the three people, is not exactly replicated on FA, what the have is <i class="fas fa-users"></i>, which has the people posiition a little straighter than in the design icon.  I have gone ahead and selected this available icon from FA for now. -AC
+File Manifest
+
+aaron-clemens-project1
+    README.md
+    index.html
+    contact.html
+    blog.html
+
+    styles
+        sass
+            _footer.scss
+            _global.scss
+            _header.scss
+            _main.scss
+            _setup.scss
+            _variables-mixins.scss
+            style.scss
+        css
+            style.css
+    assets
+        banner-image.jpg
+        blog-header.jpg
+        comment-image-1.jpg
+        comment-image-2.jpg
+        contact-header-1.jpg
+        gallery-image-1.jpg
+        gallery-image-2.jpg
+        gallery-image-3.jpg
+        header-box.jpg
+        home-image-1.jpg
+        left-image.jpg
+        post-image.jpg
+        post-image.png
+        right-image.jpg
+        sidebar-image.jpg
+        small-box-image.jpg
+
+
+    
+
+
+
+
