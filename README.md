@@ -3,6 +3,7 @@ Bar-One website
 File Manifest
 
 aaron-clemens-project1
+
     README.md
     index.html
     contact.html
