@@ -19,3 +19,6 @@ $font-secondary: "Tulpen One", cursive;
 ////////////
 
 //variable font size
+@mixin variable-font-size($start-font-size, $start-screen-width, $end-font-size, $end-screen-width) {
+    font-size: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
+}
