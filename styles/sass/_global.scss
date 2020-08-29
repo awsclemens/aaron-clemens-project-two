@@ -1,0 +1,63 @@
+/////////////////
+//global styles//
+/////////////////
+
+//general styles
+html {
+    font-size: 62.5%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+//stripping styles
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+button,
+input {
+    border: none;
+}
+
+a,
+body,
+h1,
+h2,
+h3,
+li,
+nav,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+//typographic styles
+body {
+    font-size: 3.9rem;
+    line-height: 30px;
+    letter-spacing: 1.9px;
+    font-family:$font-primary;
+    font-weight: 400;
+    background: $black;
+    color:$primary;
+}

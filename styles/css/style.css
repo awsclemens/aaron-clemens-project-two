@@ -224,10 +224,63 @@ template {
   overflow: hidden;
 }
 
-header .logo {
-  font-family: "Tulpen One", cursive;
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+button,
+input {
+  border: none;
+}
+
+a,
+body,
+h1,
+h2,
+h3,
+li,
+nav,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: palegreen;
+  font-size: 3.9rem;
+  line-height: 30px;
+  letter-spacing: 1.9px;
+  font-family: "Chathura", sans-serif;
+  font-weight: 400;
+  background: #111010;
+  color: #FFFFFF;
+}
+
+header .logo {
+  font-family: "Tulpen One", cursive;
 }
