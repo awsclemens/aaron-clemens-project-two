@@ -1,4 +1,6 @@
-//header styles
+/////////////////////////
+//header DESKTOP styles//
+/////////////////////////
 header {
     height: 100vh;
     padding-top: 40px;
@@ -22,6 +24,7 @@ header {
     }
 }
 
+//header home-page styles
 header.home-page {
     background-image: url(../../assets/home-image-1.jpg);
     background-size: cover;
@@ -64,10 +67,10 @@ header.home-page {
         right: 0;
         @include variable-bottom-position(-75, 941, -125, 1500);
         z-index: 1;
-
     }
 }
 
+//header blog-page AND contact-page styles
 header.blog-page,
 header.contact-page {
     height: 50vh;
@@ -91,7 +94,11 @@ header.contact-page {
     }  
 }
 
+//header contact-page styles
 header.contact-page {
     background-image: url(../../assets/contact-header-1.jpg);
 }
 
+////////////////////////
+//header media queries//
+////////////////////////
