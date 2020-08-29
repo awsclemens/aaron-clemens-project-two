@@ -12,7 +12,7 @@ aaron-clemens-project1
     styles
     >   
         sass
-            _footer.scss
+        >   _footer.scss
             _global.scss
             _header.scss
             _main.scss
@@ -20,7 +20,7 @@ aaron-clemens-project1
             _variables-mixins.scss
             style.scss
         css
-            style.css
+        >   style.css
     assets
     >   
         banner-image.jpg
