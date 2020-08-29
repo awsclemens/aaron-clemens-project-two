@@ -11,33 +11,51 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">home</a>
-                </li>
-                <li>
-                    <a href="./index.html">about</a>
-                </li>
-                <li class="logo">
-                    Bar-One
-                </li>
-                <li>
-                    <a href="./blog.html">blog</a>
-                </li>
-                <li>
-                    <a href="./contact.html">contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">about</a>
+                    </li>
+                    <li class="logo">
+                        Bar-One
+                    </li>
+                    <li>
+                        <a href="./blog.html">blog</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Get in Touch</h1>
+        </div>
     </header>
     <main>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-whatsapp"></i>
-
-
+        <div class="wrapper">
+            <div class="contact-info">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <p>info@gmail.com</p>
+                <p><span class="nobreak">123 - 456 - 7890</span></p>
+                <p><span class="nobreak">123 Queen Street Weest,</span> Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </div><!--<< END contact-info >>-->
+            <form action="" method="POST" class="contact-us">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="contact-name">
+                <label for="contact-email">Email address</label>
+                <input type="email" id="contact-email" name="contact-email">
+                <textarea name="contact-message" id="contact-message" cols="30" rows="10" placeholder="Message" aria-label="enter you message here"></textarea>
+                <button type="submit">Submit</button>
+            </form><!--<< END cont-us form >>-->
+        </div><!--<< END wrapper >>-->
     </main>
     <footer>
         <p>Copyright &copy; 2020 <a href="https://junocollege.com/" target="_blank" rel="noopener">Juno College</a></p>
