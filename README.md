@@ -1,15 +1,16 @@
 Bar-One website
 
-File Manifest
+File Manifest:
 
 aaron-clemens-project1
-
+>
     README.md
     index.html
     contact.html
     blog.html
 
     styles
+    >   
         sass
             _footer.scss
             _global.scss
@@ -21,6 +22,7 @@ aaron-clemens-project1
         css
             style.css
     assets
+    >   
         banner-image.jpg
         blog-header.jpg
         comment-image-1.jpg
