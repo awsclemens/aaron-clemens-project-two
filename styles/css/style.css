@@ -235,7 +235,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 80%;
   margin: 0 auto;
 }
@@ -363,7 +363,7 @@ header.home-page .header-image-container {
   position: absolute;
   width: 50%;
   right: 0;
-  bottom: calc((-75/10 * 1rem) + (100vw - (941*1px))*((-125 - -75)/(1500 - 941)));
+  bottom: calc((-75/10 * 1rem) + (100vw - (941*1px))*((-125 - -75)/(1600 - 941)));
   z-index: 1;
 }
 
@@ -394,4 +394,62 @@ header.contact-page .wrapper .title-container h1 {
 
 header.contact-page {
   background-image: url(../../assets/contact-header-1.jpg);
+}
+
+.about {
+  margin-top: calc((75/10 * 1rem) + (100vw - (941*1px))*((125 - 75)/(1600 - 941)));
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.about .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .wrapper .about-content {
+  margin-right: 10px;
+  margin-bottom: 40px;
+  width: calc((100% - 10px)/2);
+  display: flex;
+}
+
+.about .wrapper .about-content .icon-container {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  background: #BF2603;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  transform: translateY(-20%);
+}
+
+.about .wrapper .about-content .icon-container .fas {
+  transform: scale(0.6);
+  position: relative;
+  left: 1px;
+}
+
+.about .wrapper .about-content .icon-container .fa-file {
+  left: 2px;
+}
+
+.about .wrapper .about-content .about-info-container {
+  width: calc(100% - 60px);
+}
+
+.about .wrapper .about-content .about-info-container h3 {
+  margin-bottom: 10px;
+}
+
+.about .wrapper .community,
+.about .wrapper .get-in-touch {
+  margin-right: 0;
+}
+
+.articles {
+  background: #220303;
 }

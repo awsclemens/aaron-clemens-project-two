@@ -65,7 +65,7 @@ header.home-page {
         position:absolute;
         width: 50%;
         right: 0;
-        @include variable-bottom-position(-75, 941, -125, 1500);
+        @include variable-bottom-position(-75, 941, -125, 1600);
         z-index: 1;
     }
 }
