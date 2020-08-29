@@ -72,6 +72,11 @@ a {
     color: $primary;
 }
 
+a:hover,
+a:focus {
+    transform: scale(1.2);
+}
+
 a.page-selected {
     color: $secondary;
 }
