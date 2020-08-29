@@ -23,10 +23,6 @@ img {
     white-space: nowrap;
 }
 
-// * {
-//     border: 1px yellow solid;
-// }
-
 //stripping styles
 ul {
     list-style: none;
@@ -58,9 +54,9 @@ ul {
 //typographic styles
 body {
     font-size: 3.9rem;
-    line-height: 30px;
     letter-spacing: 1.9px;
-    font-family :$font-primary;
+    line-height: 30px;
+    font-family: $font-primary;
     font-weight: 400;
     background: $black;
     color: $primary;

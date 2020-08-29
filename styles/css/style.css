@@ -273,8 +273,8 @@ ul {
 
 body {
   font-size: 3.9rem;
-  line-height: 30px;
   letter-spacing: 1.9px;
+  line-height: 30px;
   font-family: "Chathura", sans-serif;
   font-weight: 400;
   background: #111010;
@@ -293,8 +293,4 @@ a {
 
 a.page-selected {
   color: #FF8327;
-}
-
-header .logo {
-  font-family: "Tulpen One", cursive;
 }
