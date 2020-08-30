@@ -150,6 +150,7 @@
                 h3 {
                     line-height:20px;
                     color: $secondary;
+                    font-size: 3.9rem;
                 }
             }
         }
@@ -201,7 +202,6 @@
                 border: 2px solid $secondary;
 
             }
-
         }
         
     }
@@ -258,9 +258,30 @@
             }
 
             article {
+                @include variable-padding-left(40, 941, 80, 1600);
 
                 &::after {
                     width: calc(100% + 10vw + 20px);
+                }
+            }
+        }
+
+        .comments {
+
+            h2,
+            .comment {
+                @include variable-margin-left(20, 941, 75, 1600);
+            }
+
+            form {
+                @include variable-margin-left(0, 941, 35, 1600);
+
+                .name,
+                .email {
+
+                    label{
+                        @include variable-margin-left(0, 941, 40, 1600);
+                    }
                 }
             }
         }

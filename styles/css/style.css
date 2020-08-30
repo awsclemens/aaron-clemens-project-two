@@ -807,6 +807,7 @@ header.contact-page {
 .main-blog-container .comments .comment .comment-content h3 {
   line-height: 20px;
   color: #FF8327;
+  font-size: 3.9rem;
 }
 
 .main-blog-container .comments .comment:first-of-type {
@@ -889,8 +890,22 @@ header.contact-page {
   .main-blog-container .post .post-image {
     width: calc(100% + 10vw);
   }
+  .main-blog-container .post article {
+    padding-left: calc((40/10 * 1rem) + (100vw - (941*1px))*((80 - 40)/(1600 - 941)));
+  }
   .main-blog-container .post article::after {
     width: calc(100% + 10vw + 20px);
+  }
+  .main-blog-container .comments h2,
+  .main-blog-container .comments .comment {
+    margin-left: calc((20/10 * 1rem) + (100vw - (941*1px))*((75 - 20)/(1600 - 941)));
+  }
+  .main-blog-container .comments form {
+    margin-left: calc((0/10 * 1rem) + (100vw - (941*1px))*((35 - 0)/(1600 - 941)));
+  }
+  .main-blog-container .comments form .name label,
+  .main-blog-container .comments form .email label {
+    margin-left: calc((0/10 * 1rem) + (100vw - (941*1px))*((40 - 0)/(1600 - 941)));
   }
 }
 
