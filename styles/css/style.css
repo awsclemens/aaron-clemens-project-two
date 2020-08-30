@@ -664,6 +664,11 @@ header.contact-page {
   top: -40px;
   left: calc(((100vw - 1280px) / -2) - 20px);
   width: calc(100% + 40px - 20px + ((100vw - 1280px) / 2));
+  overflow: hidden;
+}
+
+.main-blog-container aside .sidebar-image img {
+  transform: scale(1.01);
 }
 
 .main-blog-container aside .mission {
