@@ -493,7 +493,9 @@ header.contact-page {
 }
 
 .articles .wrapper .new-locations .article-image {
+  top: -25px;
   left: -10vw;
+  box-shadow: 20px 20px #FF8327;
 }
 
 .articles .wrapper .new-locations p {
@@ -502,6 +504,11 @@ header.contact-page {
 
 .articles .wrapper .plan-ahead {
   margin-right: 0;
+}
+
+.articles .wrapper .plan-ahead .article-image {
+  bottom: -25px;
+  box-shadow: -20px 20px #FF8327;
 }
 
 @media (min-width: 1600px) {

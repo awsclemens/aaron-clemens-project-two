@@ -2,7 +2,9 @@
 //main styles//
 ///////////////
 
-//home-page styles
+//home-page styles//@at-root
+
+//about-section
 .about {
     @include variable-margin-top(75, 941, 125, 1600);
     padding-top: 80px;
@@ -58,6 +60,7 @@
     }   
 }
 
+//articles section
 .articles {
     background: $dark-red;
     position: relative;
@@ -89,8 +92,9 @@
             text-align: right;
         
             .article-image {
+                top: -25px;
                 left:-10vw;
-                // left: calc((100vw - 1280px) / -2);
+                box-shadow: 20px 20px $secondary;
             }
 
             p {
@@ -100,9 +104,16 @@
         
         .plan-ahead {
             margin-right: 0;
+
+            .article-image {
+                bottom: -25px;
+                box-shadow: -20px 20px $secondary;
+            }
         }
     }
 }
+
+//party-hosting section
 
 
 
