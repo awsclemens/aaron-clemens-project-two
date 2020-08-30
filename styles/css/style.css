@@ -646,6 +646,104 @@ header.contact-page {
   }
 }
 
+.main-blog-container {
+  padding-top: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-blog-container aside {
+  background: #220303;
+  width: calc(35% - 80px);
+  padding: 20px;
+  margin-right: 80px;
+}
+
+.main-blog-container aside .sidebar-image {
+  position: relative;
+  top: -40px;
+  left: calc(((100vw - 1280px) / -2) - 20px);
+  width: calc(100% + 40px - 20px + ((100vw - 1280px) / 2));
+}
+
+.main-blog-container aside .mission {
+  margin: -20px 0 40px 0;
+}
+
+.main-blog-container aside .mission p {
+  margin-top: 10px;
+}
+
+.main-blog-container aside .mission a {
+  color: #FF8327;
+  text-transform: none;
+}
+
+.main-blog-container aside .mission a:hover,
+.main-blog-container aside .mission a:focus {
+  transform: scale(1.03);
+}
+
+.main-blog-container aside .recent-posts .list-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-blog-container aside .recent-posts .list-container ul {
+  width: 278px;
+}
+
+.main-blog-container aside .recent-posts .list-container ul li {
+  position: relative;
+}
+
+.main-blog-container aside .recent-posts .list-container ul li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #BF2603;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+}
+
+.main-blog-container .post {
+  width: 65%;
+}
+
+@media (max-width: 1600px) {
+  .main-blog-container aside {
+    width: calc((299/10 * 1rem) + (100vw - (941*1px))*((368 - 299)/(1600 - 941)));
+    margin-right: calc((40/10 * 1rem) + (100vw - (941*1px))*((80 - 40)/(1600 - 941)));
+    padding: calc((10/10 * 1rem) + (100vw - (941*1px))*((20 - 10)/(1600 - 941)));
+  }
+  .main-blog-container aside .sidebar-image {
+    left: calc(((100vw - 80vw) / -2) - 20px);
+    width: calc(100% + 40px - 20px + ((100vw - 80vw) / 2));
+  }
+  .main-blog-container aside .mission {
+    margin-bottom: 20px;
+    margin-bottom: calc((20/10 * 1rem) + (100vw - (941*1px))*((40 - 20)/(1600 - 941)));
+  }
+  .main-blog-container aside .recent-posts .list-container ul {
+    font-size: 3.5rem;
+    font-size: calc((35/10 * 1rem) + (100vw - (941*1px))*((39 - 35)/(1600 - 941)));
+    width: calc((256/10 * 1rem) + (100vw - (941*1px))*((278 - 256)/(1600 - 941)));
+  }
+  .main-blog-container aside .recent-posts .list-container ul li::before {
+    left: -15px;
+    width: 6px;
+    height: 6px;
+  }
+  .main-blog-container .post {
+    width: calc((414/10 * 1rem) + (100vw - (941*1px))*((832 - 414)/(1600 - 941)));
+  }
+}
+
 footer {
   height: 60px;
   display: flex;

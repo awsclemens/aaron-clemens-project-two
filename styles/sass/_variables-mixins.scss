@@ -38,6 +38,11 @@ $font-secondary: "Tulpen One", cursive;
     margin-right: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
 }
 
+//variable margin-bottom
+@mixin variable-margin-bottom($start-font-size, $start-screen-width, $end-font-size, $end-screen-width) {
+    margin-bottom: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
+}
+
 //variable padding-top
 @mixin variable-padding-top($start-font-size, $start-screen-width, $end-font-size, $end-screen-width) {
     padding-top: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
@@ -46,4 +51,14 @@ $font-secondary: "Tulpen One", cursive;
 //variable padding-bottom
 @mixin variable-padding-bottom($start-font-size, $start-screen-width, $end-font-size, $end-screen-width) {
     padding-bottom: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
+}
+
+//variable padding
+@mixin variable-padding($start-font-size, $start-screen-width, $end-font-size, $end-screen-width) {
+    padding: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
+}
+
+//variable width
+@mixin variable-width($start-font-size, $start-screen-width, $end-font-size, $end-screen-width) {
+    width: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
 }
