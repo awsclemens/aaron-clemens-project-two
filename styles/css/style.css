@@ -296,7 +296,7 @@ a:hover,
 a:focus,
 button:hover,
 button:focus {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 a.page-selected {
@@ -316,7 +316,7 @@ button {
   font-family: "Tulpen One", cursive;
   background: #BF2603;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 20px;
   transition: transform 0.3s linear;
 }
 
@@ -398,9 +398,8 @@ header.home-page .wrapper .header-image-container {
 
 header.blog-page,
 header.contact-page {
-  height: 50vh;
   background-image: url(../../assets/blog-header-1.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 header.blog-page .wrapper,
@@ -908,6 +907,83 @@ header.contact-page {
   .main-blog-container .comments form .email label {
     margin-left: calc((0/10 * 1rem) + (100vw - (941*1px))*((40 - 0)/(1600 - 941)));
   }
+}
+
+.main-contact-container .wrapper {
+  display: flex;
+}
+
+.contact-info {
+  width: 25%;
+  margin-top: 100px;
+}
+
+.contact-info p:first-of-type {
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  font-size: 2.4rem;
+  padding: 5px;
+}
+
+.contact-us {
+  width: 75%;
+  background: #220303;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 20px 20px #FF8327;
+  position: relative;
+  top: -150px;
+  right: calc((100vw - 1280px) / -4);
+}
+
+.contact-us .contact-name,
+.contact-us .contact-email {
+  width: calc((100% - 20px) / 2);
+  margin-top: 20px;
+}
+
+.contact-us .contact-name label,
+.contact-us .contact-email label {
+  margin-left: 20px;
+}
+
+.contact-us .contact-name input,
+.contact-us .contact-email input {
+  background: #220303;
+  border-bottom: 2px solid #FFFFFF;
+  height: 30px;
+  margin-top: 10px;
+  color: #FFFFFF;
+  font-family: "Chathura", sans-serif;
+}
+
+.contact-us textarea {
+  width: 100%;
+  height: 250px;
+  resize: none;
+  margin: 40px 0;
+  background: #220303;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.contact-us button {
+  width: 100%;
+  line-height: 1;
 }
 
 footer {

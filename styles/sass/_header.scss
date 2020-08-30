@@ -76,9 +76,9 @@ header.home-page {
 //header blog-page AND contact-page styles
 header.blog-page,
 header.contact-page {
-    height: 50vh;
+
     background-image: url(../../assets/blog-header-1.jpg);
-    background-size: contain;
+    background-size: cover;
 
     .wrapper {
         height: calc(100% - 40px);
