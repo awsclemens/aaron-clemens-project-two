@@ -4,7 +4,6 @@
 
 //about-section
 .about {
-    
     margin-top: 125px;
     padding-top: 80px;
     padding-bottom: 140px;
@@ -13,50 +12,51 @@
         display: flex;
         flex-wrap: wrap;
         
-        .about-content {
-            margin-right: 10px;
-            margin-bottom: 40px;
-            width: calc((100% - 10px)/2);
-            display:flex;
-
-            .icon-container {
-                width: 45px;
-                height: 45px;
-                margin-right: 15px;
-                background: $rust-red;
-                border-radius: 50%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                position: relative;
-                transform: translateY(-20%);
-    
-                .fas {
-                    transform: scale(0.6);
-                    position: relative;
-                    left: 1px;
-                }
-    
-                .fa-file {
-                    left: 2px;
-                }
-            }
-
-            .about-info-container {
-                width: calc(100% - 60px);
-
-                h3 {
-                    margin-bottom: 10px;
-                }
-            }
-        }
-
-        .community,
-        .get-in-touch {
-            margin-right: 0;
-        }
         
     }   
+}
+
+.about-content {
+    margin-right: 10px;
+    margin-bottom: 40px;
+    width: calc((100% - 10px)/2);
+    display:flex;
+
+    .icon-container {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+        background: $rust-red;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        transform: translateY(-20%);
+
+        .fas {
+            transform: scale(0.6);
+            position: relative;
+            left: 1px;
+        }
+
+        .fa-file {
+            left: 2px;
+        }
+    }
+
+    .about-info-container {
+        width: calc(100% - 60px);
+
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.community,
+.get-in-touch {
+    margin-right: 0;
 }
 
 //articles section
@@ -69,47 +69,46 @@
         article {
             width: calc((100% - 225px)/2);
             margin-right: 225px;
-            
-
-            .article-image {
-                position:relative;
-                width: calc(50vw - (225px/2));
-            }
-
-            .article-info {
-                margin-top: 100px;
-                margin-bottom: 80px;
-
-                p {
-                    margin-top: 20px;
-                    margin-bottom: 30px;
-                }
-            }
         }
-        
-        .new-locations {
-            text-align: right;
-        
-            .article-image {
-                top: -30px;
-                
-                left: calc((100vw - 1280px) / -2);
-                box-shadow: 20px 20px $secondary;
-            }
+    }
+}
 
-            p {
-                text-align: left;
-            }
-        }
-        
-        .plan-ahead {
-            margin-right: 0;
+.article-image {
+    position:relative;
+    width: calc(50vw - (225px/2));
+}
 
-            .article-image {
-                bottom: -30px;
-                box-shadow: -20px 20px $secondary;
-            }
-        }
+.article-info {
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.new-locations {
+    text-align: right;
+
+    .article-image {
+        top: -30px;
+        
+        left: calc((100vw - 1280px) / -2);
+        box-shadow: 20px 20px $secondary;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+.plan-ahead {
+    margin-right: 0;
+
+    .article-image {
+        bottom: -30px;
+        box-shadow: -20px 20px $secondary;
     }
 }
 
@@ -160,30 +159,29 @@
             margin-right: 70px;
             visibility: hidden;
         }
+    }
+}
 
-        article {
-            width: calc(72% - 70px);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            
-            h2 {
-                color: $secondary;
-            }
+.home-events-article {
+    width: calc(72% - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    h2 {
+        color: $secondary;
+    }
 
-            p {
-                margin: 40px 0;
-                position: relative;
-                bottom: -10px;
-            }
+    p {
+        margin: 40px 0;
+        position: relative;
+        bottom: -10px;
+    }
 
-            a {
-                position: relative;
-                bottom: -20px;
-            }
-
-        }
+    a {
+        position: relative;
+        bottom: -20px;
     }
 }
 
@@ -226,20 +224,19 @@
             article {
                 width: calc((100% - (100px +(100vw - 941px)*((225 - 100)/(1600 - 941))))/2);
                 @include variable-margin-right(100, 941, 225, 1600);
-                
-
-                .article-image {
-                    width: calc((50vw - ((100px +(100vw - 941px)*((225 - 100)/(1600 - 941)))/2)));
-                    
-                }
             }
+        }
+    }
 
-            .new-locations {
+    .article-image {
+        width: calc((50vw - ((100px +(100vw - 941px)*((225 - 100)/(1600 - 941)))/2)));
+        
+    }
 
-                .article-image {
-                    left:-10vw;
-                }
-            }
+    .new-locations {
+
+        .article-image {
+            left:-10vw;
         }
     }
 
@@ -262,18 +259,18 @@
             .events-space-holder {
                 @include variable-margin-right(40, 941, 70, 1600);
             }
+        }
+    }
 
-            article {
-                width: calc(72% - (40px + (100vw - 941px)*((70 - 40)/(1600 - 941))));
+    .home-events-article {
+        width: calc(72% - (40px + (100vw - 941px)*((70 - 40)/(1600 - 941))));
 
-                p {
-                    @include variable-bottom-position(0, 941, -7.5, 1600);
-                }
+        p {
+            @include variable-bottom-position(0, 941, -7.5, 1600);
+        }
 
-                a {
-                    @include variable-bottom-position(0, 941, -15, 1600);
-                }
-            }
+        a {
+            @include variable-bottom-position(0, 941, -15, 1600);
         }
     }
 
@@ -281,7 +278,6 @@
     .gallery {
         @include variable-padding-top(50, 941, 100, 1600);
         @include variable-padding-bottom(50, 941, 100, 1600);
-
     }
 }
 
