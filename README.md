@@ -23,6 +23,7 @@ aaron-clemens-project1
             style.scss
         css
         >   style.css
+        
     assets
     >   
         banner-image.jpg
