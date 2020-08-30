@@ -338,15 +338,15 @@ header ul {
   justify-content: center;
 }
 
-header ul li {
+header li {
   margin: 0 20px;
 }
 
-header ul li a {
+header li a {
   padding: 5px 10px;
 }
 
-header ul .logo {
+header .logo {
   font-size: 5rem;
   font-family: "Tulpen One", cursive;
 }
@@ -366,11 +366,11 @@ header.home-page .wrapper {
   align-items: center;
 }
 
-header.home-page .wrapper .title-container {
+.home-title-container {
   z-index: 10;
 }
 
-header.home-page .wrapper .title-container h1 {
+.home-title-container h1 {
   font-family: "Tulpen One", cursive;
   font-size: 26.14rem;
   font-weight: 400;
@@ -381,13 +381,13 @@ header.home-page .wrapper .title-container h1 {
   left: -5px;
 }
 
-header.home-page .wrapper .title-container h2 {
+.home-title-container h2 {
   font-size: 8.32rem;
   line-height: 94.7px;
   letter-spacing: 2.6px;
 }
 
-header.home-page .wrapper .header-image-container {
+.home-header-image-container {
   position: absolute;
   width: 50%;
   max-width: 1000px;
@@ -425,7 +425,7 @@ header.contact-page {
 }
 
 @media (max-width: 1600px) {
-  header.home-page .wrapper .header-image-container {
+  .home-header-image-container {
     bottom: calc((-75/10 * 1rem) + (100vw - (941*1px))*((-125 - -75)/(1600 - 941)));
   }
 }
