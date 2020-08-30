@@ -328,6 +328,12 @@ textarea {
   font-family: "Chathura", sans-serif;
 }
 
+@media (max-width: 940px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
 header {
   height: 100vh;
   padding-top: 40px;

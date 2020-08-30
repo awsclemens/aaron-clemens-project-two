@@ -110,4 +110,15 @@ textarea {
     font-family: $font-primary;
 }
 
+////////////////////////
+//global media queries//
+////////////////////////
+
+//global TABLET//
+@media (max-width: 940px) {
+    .wrapper {
+        width: 85%;
+    }
+}
+
 
