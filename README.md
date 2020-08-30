@@ -15,7 +15,9 @@ aaron-clemens-project1
         >   _footer.scss
             _global.scss
             _header.scss
-            _main.scss
+            _main-blog-page.scss
+            _main-contact-page.scss
+            _main-home-page.scss
             _setup.scss
             _variables-mixins.scss
             style.scss
