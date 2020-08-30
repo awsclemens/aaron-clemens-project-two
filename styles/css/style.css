@@ -461,7 +461,6 @@ header.contact-page {
 
 .articles {
   background: #220303;
-  position: relative;
 }
 
 .articles .wrapper {
@@ -493,7 +492,7 @@ header.contact-page {
 }
 
 .articles .wrapper .new-locations .article-image {
-  top: -25px;
+  top: -30px;
   left: -10vw;
   box-shadow: 20px 20px #FF8327;
 }
@@ -507,8 +506,30 @@ header.contact-page {
 }
 
 .articles .wrapper .plan-ahead .article-image {
-  bottom: -25px;
+  bottom: -30px;
   box-shadow: -20px 20px #FF8327;
+}
+
+.party-hosting {
+  padding-top: calc((100/10 * 1rem) + (100vw - (941*1px))*((200 - 100)/(1600 - 941)));
+  padding-bottom: calc((70/10 * 1rem) + (100vw - (941*1px))*((140 - 70)/(1600 - 941)));
+  display: flex;
+}
+
+.party-hosting .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.party-hosting .wrapper h2 {
+  color: #FF8327;
+}
+
+.party-hosting .wrapper p {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 1057px;
 }
 
 @media (min-width: 1600px) {
@@ -521,5 +542,9 @@ header.contact-page {
   }
   .articles .wrapper .new-locations .article-image {
     left: calc((100vw - 1280px) / -2);
+  }
+  .party-hosting {
+    padding-top: 200px;
+    padding-bottom: 140px;
   }
 }
