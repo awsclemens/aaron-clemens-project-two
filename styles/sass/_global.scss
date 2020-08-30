@@ -38,6 +38,7 @@ input {
     border: none;
 }
 
+
 a,
 body,
 h1,
@@ -74,7 +75,9 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus,
+button:hover,
+button:focus {
     transform: scale(1.2);
 }
 
@@ -90,4 +93,21 @@ a.button-link {
     text-transform: capitalize;
     display: inline-block;
 }
+
+button {
+    font-family: $font-secondary;
+    background: $rust-red;
+    color: white;
+    padding: 10px 20px;
+    transition: transform 0.3s linear;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    font-family: $font-primary;
+}
+
 

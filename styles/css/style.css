@@ -293,7 +293,9 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus,
+button:hover,
+button:focus {
   transform: scale(1.2);
 }
 
@@ -308,6 +310,22 @@ a.button-link {
   font-weight: 400;
   text-transform: capitalize;
   display: inline-block;
+}
+
+button {
+  font-family: "Tulpen One", cursive;
+  background: #BF2603;
+  color: white;
+  padding: 10px 20px;
+  transition: transform 0.3s linear;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  font-family: "Chathura", sans-serif;
 }
 
 header {
@@ -654,9 +672,9 @@ header.contact-page {
 
 .main-blog-container aside {
   background: #220303;
-  width: calc(35% - 80px);
+  width: calc(35% - 60px);
   padding: 20px;
-  margin-right: 80px;
+  margin-right: 60px;
 }
 
 .main-blog-container aside .sidebar-image {
@@ -717,13 +735,134 @@ header.contact-page {
 }
 
 .main-blog-container .post {
-  width: 65%;
+  width: 70%;
+  position: relative;
+  top: -220px;
+}
+
+.main-blog-container .post .post-image {
+  box-shadow: -20px 20px #FF8327;
+  position: relative;
+  left: 20px;
+  width: calc(100% - 20px + ((100vw - 1280px) / 2));
+}
+
+.main-blog-container .post article {
+  position: relative;
+  padding: 80px 0 80px 80px;
+  border-left: 5px solid #FF8327;
+}
+
+.main-blog-container .post article::after {
+  content: '';
+  width: calc(100% + ((100vw - 1280px) / 2));
+  height: 5px;
+  background: #FF8327;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-blog-container .post article h2 {
+  margin-bottom: 10px;
+}
+
+.main-blog-container .post article h3 {
+  font-size: 3.9rem;
+  color: #FF8327;
+}
+
+.main-blog-container .post article p {
+  margin-top: 30px;
+}
+
+.main-blog-container .comments {
+  padding: 50px 0 60px 0;
+  margin-bottom: -220px;
+}
+
+.main-blog-container .comments h2,
+.main-blog-container .comments .comment {
+  margin-left: 75px;
+}
+
+.main-blog-container .comments h2 {
+  margin-bottom: 40px;
+}
+
+.main-blog-container .comments .comment {
+  display: flex;
+}
+
+.main-blog-container .comments .comment .comment-image {
+  width: 75px;
+}
+
+.main-blog-container .comments .comment .comment-content {
+  margin-left: 30px;
+  width: calc(100% - 75px - 30px);
+}
+
+.main-blog-container .comments .comment .comment-content h3 {
+  line-height: 20px;
+  color: #FF8327;
+}
+
+.main-blog-container .comments .comment:first-of-type {
+  margin-bottom: 60px;
+}
+
+.main-blog-container .comments .comment:last-of-type {
+  margin-bottom: 40px;
+}
+
+.main-blog-container .comments form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 35px;
+}
+
+.main-blog-container .comments form .name,
+.main-blog-container .comments form .email {
+  width: calc((100% - 40px) / 2);
+}
+
+.main-blog-container .comments form .name label,
+.main-blog-container .comments form .email label {
+  margin-left: 40px;
+}
+
+.main-blog-container .comments form .name input,
+.main-blog-container .comments form .email input {
+  background: #111010;
+  border-bottom: 2px solid #FF8327;
+  color: #FFFFFF;
+  font-size: 3.9rem;
+  font-family: "Chathura", sans-serif;
+}
+
+.main-blog-container .comments form textarea,
+.main-blog-container .comments form button {
+  width: 100%;
+}
+
+.main-blog-container .comments form textarea {
+  resize: none;
+  background: #111010;
+  font-size: 3.9rem;
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-left: 40px;
+  margin: 35px 0;
+  border: 2px solid #FF8327;
 }
 
 @media (max-width: 1600px) {
   .main-blog-container aside {
     width: calc((299/10 * 1rem) + (100vw - (941*1px))*((368 - 299)/(1600 - 941)));
-    margin-right: calc((40/10 * 1rem) + (100vw - (941*1px))*((80 - 40)/(1600 - 941)));
+    margin-right: calc((40/10 * 1rem) + (100vw - (941*1px))*((60 - 40)/(1600 - 941)));
     padding: calc((10/10 * 1rem) + (100vw - (941*1px))*((20 - 10)/(1600 - 941)));
   }
   .main-blog-container aside .sidebar-image {
@@ -747,6 +886,12 @@ header.contact-page {
   .main-blog-container .post {
     width: calc((414/10 * 1rem) + (100vw - (941*1px))*((832 - 414)/(1600 - 941)));
   }
+  .main-blog-container .post .post-image {
+    width: calc(100% + 10vw);
+  }
+  .main-blog-container .post article::after {
+    width: calc(100% + 10vw + 20px);
+  }
 }
 
 footer {
@@ -754,6 +899,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #2c2c2c;
 }
 
 footer a {

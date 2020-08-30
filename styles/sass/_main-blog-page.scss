@@ -11,9 +11,9 @@
 //aside
     aside {
         background: $dark-red;
-        width: calc(35% - 80px);
+        width: calc(35% - 60px);
         padding: 20px;
-        margin-right: 80px;
+        margin-right: 60px;
 
         .sidebar-image {
             position: relative;
@@ -78,7 +78,132 @@
 
 //post section
     .post {
-        width: 65%;
+        width: 70%;
+        position: relative;
+        top: -220px;
+
+        .post-image {
+            box-shadow: -20px 20px $secondary;
+            position: relative;
+            left: 20px;
+            width: calc(100% - 20px + ((100vw - 1280px) / 2));
+        }
+
+
+        article {
+            position: relative;
+            padding: 80px 0 80px 80px; 
+            border-left: 5px solid $secondary;
+
+            &::after {
+                content : '';
+                width: calc(100% + ((100vw - 1280px) / 2));
+                height: 5px;
+                background: $secondary;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 3.9rem;
+                color: $secondary;
+            }
+
+            p {
+                margin-top: 30px;
+            }
+        }
+    }
+
+//comments section   
+    .comments {
+        padding: 50px 0 60px 0;
+        margin-bottom: -220px;
+
+        h2,
+        .comment {
+            margin-left: 75px;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        .comment {
+            display: flex;
+            
+
+            .comment-image {
+                width: 75px;
+            }
+
+            .comment-content {
+                margin-left: 30px;
+                width: calc(100% - 75px - 30px);
+
+                h3 {
+                    line-height:20px;
+                    color: $secondary;
+                }
+            }
+        }
+
+        .comment:first-of-type {
+            margin-bottom: 60px;
+        }
+
+        .comment:last-of-type {
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 35px;
+
+            .name,
+            .email {
+                width: calc((100% - 40px) / 2);
+
+                label {
+                    margin-left: 40px;
+                }
+
+                input {
+                    background: $black;
+                    border-bottom: 2px solid $secondary;
+                    color: $primary;
+                    font-size: 3.9rem;
+                    font-family: $font-primary;
+                }
+            }
+
+            textarea,
+            button {
+                width: 100%;
+            }
+
+            textarea {
+                resize: none;
+                background: $black;
+                font-size: 3.9rem;
+                color: $primary;
+                padding-top: 30px;
+                padding-left: 40px;
+                margin: 35px 0;
+                border: 2px solid $secondary;
+
+            }
+
+        }
+        
     }
 }
 
@@ -92,7 +217,7 @@
 
         aside {
             @include variable-width(299, 941, 368, 1600);
-            @include variable-margin-right(40, 941, 80, 1600);
+            @include variable-margin-right(40, 941, 60, 1600);
             @include variable-padding(10, 941, 20, 1600);
 
             .sidebar-image {
@@ -127,6 +252,17 @@
 
         .post {
             @include variable-width(414, 941, 832, 1600);
+
+            .post-image {
+                width:calc(100% + 10vw);
+            }
+
+            article {
+
+                &::after {
+                    width: calc(100% + 10vw + 20px);
+                }
+            }
         }
     }
 }
