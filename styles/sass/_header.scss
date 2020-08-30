@@ -105,10 +105,18 @@ header.contact-page {
 //header media queries//
 ////////////////////////
 
-//DESKTOP @ wrapper stop width
+//header DESKTOP @ wrapper stop width
 @media (max-width: 1600px) {
     .home-header-image-container {
         @include variable-bottom-position(-75, 941, -125, 1600);
+    }
+}
+
+//header TABLET//
+@media (max-width: 940px) {
+    header li {
+        @include variable-margin-left(15, 769, 20, 940);
+        @include variable-margin-right(15, 769, 20, 940);
     }
 }
     

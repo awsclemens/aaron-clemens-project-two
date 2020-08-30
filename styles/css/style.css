@@ -430,6 +430,13 @@ header.contact-page {
   }
 }
 
+@media (max-width: 940px) {
+  header li {
+    margin-left: calc((15/10 * 1rem) + (100vw - (769*1px))*((20 - 15)/(940 - 769)));
+    margin-right: calc((15/10 * 1rem) + (100vw - (769*1px))*((20 - 15)/(940 - 769)));
+  }
+}
+
 .about {
   margin-top: 125px;
   padding-top: 80px;
