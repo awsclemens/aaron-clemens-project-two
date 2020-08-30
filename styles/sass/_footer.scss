@@ -11,10 +11,10 @@ footer {
 
     a {
         display: inline-block;
-    }
 
-    a:hover,
-    a:focus {
-        transform: scale(1.1);
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+        }
     }
 }
