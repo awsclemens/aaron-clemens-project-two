@@ -177,12 +177,12 @@
             p {
                 margin: 40px 0;
                 position: relative;
-                @include variable-bottom-position(0, 941, -10, 1600);
+                bottom: -10px;
             }
 
             a {
                 position: relative;
-                @include variable-bottom-position(0, 941, -20, 1600);
+                bottom: -20px;
             }
 
         }
@@ -267,6 +267,14 @@
 
             article {
                 width: calc(72% - (40px + (100vw - 941px)*((70 - 40)/(1600 - 941))));
+
+                p {
+                    @include variable-bottom-position(0, 941, -7.5, 1600);
+                }
+
+                a {
+                    @include variable-bottom-position(0, 941, -15, 1600);
+                }
             }
         }
     }

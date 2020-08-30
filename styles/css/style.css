@@ -289,6 +289,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: transform 0.3s linear;
 }
 
 a:hover,
@@ -579,12 +580,12 @@ header.contact-page {
 .events .wrapper article p {
   margin: 40px 0;
   position: relative;
-  bottom: calc((0/10 * 1rem) + (100vw - (941*1px))*((-10 - 0)/(1600 - 941)));
+  bottom: -10px;
 }
 
 .events .wrapper article a {
   position: relative;
-  bottom: calc((0/10 * 1rem) + (100vw - (941*1px))*((-20 - 0)/(1600 - 941)));
+  bottom: -20px;
 }
 
 .gallery {
@@ -633,8 +634,30 @@ header.contact-page {
   .events .wrapper article {
     width: calc(72% - (40px + (100vw - 941px)*((70 - 40)/(1600 - 941))));
   }
+  .events .wrapper article p {
+    bottom: calc((0/10 * 1rem) + (100vw - (941*1px))*((-7.5 - 0)/(1600 - 941)));
+  }
+  .events .wrapper article a {
+    bottom: calc((0/10 * 1rem) + (100vw - (941*1px))*((-15 - 0)/(1600 - 941)));
+  }
   .gallery {
     padding-top: calc((50/10 * 1rem) + (100vw - (941*1px))*((100 - 50)/(1600 - 941)));
     padding-bottom: calc((50/10 * 1rem) + (100vw - (941*1px))*((100 - 50)/(1600 - 941)));
   }
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  display: inline-block;
+}
+
+footer a:hover,
+footer a:focus {
+  transform: scale(1.1);
 }

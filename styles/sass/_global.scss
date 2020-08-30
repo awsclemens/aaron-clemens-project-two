@@ -70,6 +70,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     color: $primary;
+    transition: transform 0.3s linear;
 }
 
 a:hover,

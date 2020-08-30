@@ -1,0 +1,19 @@
+/////////////////////////
+//footer DESKTOP styles//
+/////////////////////////
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        display: inline-block;
+    }
+
+    a:hover,
+    a:focus {
+        transform: scale(1.1);
+    }
+}
