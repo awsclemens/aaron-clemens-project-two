@@ -407,15 +407,15 @@ header.contact-page .wrapper {
   height: calc(100% - 40px);
 }
 
-header.blog-page .wrapper .title-container,
-header.contact-page .wrapper .title-container {
+.blog-title-container,
+.contact-title-container {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-header.blog-page .wrapper .title-container h1,
-header.contact-page .wrapper .title-container h1 {
+.blog-title-container h1,
+.contact-title-container h1 {
   font-size: 10rem;
   line-height: 1;
 }
