@@ -32,3 +32,8 @@ $font-secondary: "Tulpen One", cursive;
 @mixin variable-margin-top($start-font-size, $start-screen-width, $end-font-size, $end-screen-width) {
     margin-top: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
 }
+
+//variable margin-right
+@mixin variable-margin-right($start-font-size, $start-screen-width, $end-font-size, $end-screen-width) {
+    margin-right: calc((#{$start-font-size}/10 * 1rem) + (100vw - (#{$start-screen-width}*1px))*((#{$end-font-size} - #{$start-font-size})/(#{$end-screen-width} - #{$start-screen-width})));
+}

@@ -300,6 +300,15 @@ a.page-selected {
   color: #FF8327;
 }
 
+a.button-link {
+  font-family: "Tulpen One", cursive;
+  padding: 10px 20px;
+  background: #BF2603;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
 header {
   height: 100vh;
   padding-top: 40px;
@@ -399,7 +408,7 @@ header.contact-page {
 .about {
   margin-top: calc((75/10 * 1rem) + (100vw - (941*1px))*((125 - 75)/(1600 - 941)));
   padding-top: 80px;
-  padding-bottom: 160px;
+  padding-bottom: 140px;
 }
 
 .about .wrapper {
@@ -452,4 +461,58 @@ header.contact-page {
 
 .articles {
   background: #220303;
+  position: relative;
+}
+
+.articles .wrapper {
+  display: flex;
+}
+
+.articles .wrapper article {
+  width: calc((100% - (100px +(100vw - 941px)*((225 - 100)/(1600 - 941))))/2);
+  margin-right: calc((100/10 * 1rem) + (100vw - (941*1px))*((225 - 100)/(1600 - 941)));
+}
+
+.articles .wrapper article .article-image {
+  position: relative;
+  width: calc((50vw - ((100px +(100vw - 941px)*((225 - 100)/(1600 - 941)))/2)));
+}
+
+.articles .wrapper article .article-info {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.articles .wrapper article .article-info p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.articles .wrapper .new-locations {
+  text-align: right;
+}
+
+.articles .wrapper .new-locations .article-image {
+  left: -10vw;
+}
+
+.articles .wrapper .new-locations p {
+  text-align: left;
+}
+
+.articles .wrapper .plan-ahead {
+  margin-right: 0;
+}
+
+@media (min-width: 1600px) {
+  .articles .wrapper article {
+    width: calc((100% - 225px)/2);
+    margin-right: 225px;
+  }
+  .articles .wrapper article .article-image {
+    width: calc(50vw - (225px/2));
+  }
+  .articles .wrapper .new-locations .article-image {
+    left: calc((100vw - 1280px) / -2);
+  }
 }

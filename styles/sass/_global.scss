@@ -81,3 +81,12 @@ a.page-selected {
     color: $secondary;
 }
 
+a.button-link {
+    font-family: $font-secondary;
+    padding: 10px 20px;
+    background: $rust-red;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
