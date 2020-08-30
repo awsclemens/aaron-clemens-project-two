@@ -58,16 +58,19 @@ header.home-page {
                 letter-spacing: 2.6px;
             }
         }
+
+        .header-image-container {
+            position:absolute;
+            width: 50%;
+            max-width: 1000px;
+            right: 0;
+            bottom: -125px;
+            z-index: 1;
+        }
             
     }
 
-    .header-image-container {
-        position:absolute;
-        width: 50%;
-        right: 0;
-        @include variable-bottom-position(-75, 941, -125, 1600);
-        z-index: 1;
-    }
+    
 }
 
 //header blog-page AND contact-page styles
@@ -102,3 +105,17 @@ header.contact-page {
 ////////////////////////
 //header media queries//
 ////////////////////////
+
+//DESKTOP @ wrapper stop width
+@media (max-width: 1600px) {
+    header.home-page {
+
+        .wrapper {
+
+            .header-image-container {
+                @include variable-bottom-position(-75, 941, -125, 1600);
+            }
+        }
+    }
+}
+    
