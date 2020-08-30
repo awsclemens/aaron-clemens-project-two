@@ -79,3 +79,19 @@
         line-height: 1;
     }
 }
+
+///////////////////////////////////
+//contact-page main media queries//
+///////////////////////////////////
+
+//contact-page DESKTOP @ wrapper stop width//
+@media (max-width: 1600px) {
+    .contact-info p {
+        @include variable-font-size(36, 941, 39, 1600);
+    }
+
+    .contact-us {
+        top: -150px;
+        right: -5vw;
+    }
+}

@@ -986,6 +986,16 @@ header.contact-page {
   line-height: 1;
 }
 
+@media (max-width: 1600px) {
+  .contact-info p {
+    font-size: calc((36/10 * 1rem) + (100vw - (941*1px))*((39 - 36)/(1600 - 941)));
+  }
+  .contact-us {
+    top: -150px;
+    right: -5vw;
+  }
+}
+
 footer {
   height: 60px;
   display: flex;
