@@ -991,7 +991,6 @@ header.contact-page {
     font-size: calc((36/10 * 1rem) + (100vw - (941*1px))*((39 - 36)/(1600 - 941)));
   }
   .contact-us {
-    top: -150px;
     right: -5vw;
   }
 }
