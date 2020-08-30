@@ -154,17 +154,17 @@
             box-shadow:-20px 20px $secondary;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 20px;
         }
 
         .events-space-holder {
             width: 28%;
-            @include variable-margin-right(30, 941, 70, 1600);
+            margin-right: 70px;
             visibility: hidden;
         }
 
         article {
-            width: calc(72% - (30px + (100vw - 941px)*((70 - 30)/(1600 - 941))));
+            width: calc(72% - 70px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -189,16 +189,38 @@
     }
 }
 
+//gallery section
+.gallery {
+    background: $dark-red;
+    padding: 100px 0;
 
-//////////////////////
-//main media queries//
-//////////////////////
+    ul {
+        display: flex;
 
-// home-page DESKTOP @ wrapper stop growing//
+        li {
+            width: calc((100% - 80px)/3);
+            margin-right: 40px
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+////////////////////////////////
+//home-page main media queries//
+////////////////////////////////
+
+// home-page DESKTOP @ wrapper stop width//
 @media (max-width: 1600px) {
+
+    //about section max 1600px
     .about {
         @include variable-margin-top(75, 941, 125, 1600);
     }
+
+    //articles section max 1600px
     .articles {
 
         .wrapper {
@@ -223,9 +245,37 @@
         }
     }
 
+    //party-hosting section max 1600px
     .party-hosting {
         @include variable-padding-top(100, 941, 200, 1600);
         @include variable-padding-bottom(70, 941, 140, 1600);
+    }
+
+    //events section max 1600px
+    .events {
+
+        .wrapper {
+
+            .events-image {
+                box-shadow: -15px 15px $secondary;
+                left: 10px;
+            }
+
+            .events-space-holder {
+                @include variable-margin-right(40, 941, 70, 1600);
+            }
+
+            article {
+                width: calc(72% - (40px + (100vw - 941px)*((70 - 40)/(1600 - 941))));
+            }
+        }
+    }
+
+    //gallery section max 1600px
+    .gallery {
+        @include variable-padding-top(50, 941, 100, 1600);
+        @include variable-padding-bottom(50, 941, 100, 1600);
+
     }
 }
 
