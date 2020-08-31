@@ -342,15 +342,52 @@
         width: 100px
     }
 
-
-
-
-
-
+    .comment-form {
+        margin-left: 0;
+    }
 }
 
 //blog-page LANDSCAPE PHONE - PORTRAIT TABLET//
 @media (max-width: 768px) {
+    .main-blog-container {
+        padding-top: 0;
+    }
+    .blog-aside {
+        padding: 40px 40px;
+        flex-direction: column;
+        align-items: center;
+
+        .sidebar-image {
+            position: static;
+            width: 100%;
+        }
+    }
+
+    .mission,
+    .recent-posts {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .blog-list-container ul {
+        position: relative;
+        left: 15px;
+    }
+
+    .comment-form {
+        flex-direction: column;
+
+        .comment-name,
+        .comment-email {
+            width: 100%;
+        }
+
+        .comment-email {
+            margin-top: 30px;
+        }
+    }
+    
+
 }
 
 //home-page PORTRAIT PHONES - SOME LANDSCAPE PHONES//

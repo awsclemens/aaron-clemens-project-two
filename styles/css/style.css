@@ -1141,6 +1141,43 @@ header.contact-page {
   .comment .comment-image {
     width: 100px;
   }
+  .comment-form {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-blog-container {
+    padding-top: 0;
+  }
+  .blog-aside {
+    padding: 40px 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-aside .sidebar-image {
+    position: static;
+    width: 100%;
+  }
+  .mission,
+  .recent-posts {
+    width: 90%;
+    margin-top: 30px;
+  }
+  .blog-list-container ul {
+    position: relative;
+    left: 15px;
+  }
+  .comment-form {
+    flex-direction: column;
+  }
+  .comment-form .comment-name,
+  .comment-form .comment-email {
+    width: 100%;
+  }
+  .comment-form .comment-email {
+    margin-top: 30px;
+  }
 }
 
 .main-contact-container .wrapper {
