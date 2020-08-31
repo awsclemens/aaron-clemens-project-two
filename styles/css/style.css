@@ -1083,6 +1083,66 @@ header.contact-page {
   }
 }
 
+@media (max-width: 940px) {
+  .main-blog-container {
+    padding-top: 50px;
+    flex-direction: column;
+  }
+  .blog-aside {
+    width: 100%;
+    margin: 0;
+    padding: 60px 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .blog-aside .sidebar-image {
+    position: absolute;
+    width: 350px;
+    top: -300px;
+    left: -7.5vw;
+  }
+  .mission {
+    margin: 0;
+    width: calc((100% - 35px) / 2);
+  }
+  .mission p {
+    margin: 10px 0;
+  }
+  .recent-posts {
+    width: calc((100% - 35px) / 2);
+  }
+  .blog-list-container ul {
+    width: 100%;
+  }
+  .blog-list-container ul li {
+    font-size: 3.9rem;
+  }
+  .post {
+    position: static;
+    width: 100%;
+  }
+  .post .post-image {
+    position: relative;
+    top: -20px;
+    width: calc(100% + 7.5vw - 20px);
+  }
+  .post article {
+    padding: 40px 30px;
+  }
+  .comments {
+    margin-bottom: 0;
+    padding: 50px 30px 60px 30px;
+  }
+  .comments h2,
+  .comments .comment {
+    margin-left: 0;
+  }
+  .comment .comment-image {
+    width: 100px;
+  }
+}
+
 .main-contact-container .wrapper {
   display: flex;
 }
