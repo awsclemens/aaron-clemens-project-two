@@ -443,6 +443,18 @@ header.contact-page {
   }
 }
 
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .home-title-container h1 {
+    font-size: calc((250/10 * 1rem) + (100vw - (481*1px))*((261.4 - 250)/(768 - 481)));
+  }
+  .home-header-image-container {
+    display: none;
+  }
+}
+
 .about {
   margin-top: 125px;
   padding-top: 80px;

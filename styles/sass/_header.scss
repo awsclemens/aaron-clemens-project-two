@@ -112,7 +112,7 @@ header.contact-page {
     }
 }
 
-//header PORTRAIT TABLAIT - SMALL DESKTOPS//
+//header PORTRAIT TABLET - SMALL DESKTOPS//
 @media (max-width: 940px) {
     header li {
         @include variable-margin-left(15, 769, 20, 940);
@@ -122,5 +122,15 @@ header.contact-page {
 
 //header LANDSCAPE PHONE - PORTRAIT TABLET//
 @media (max-width: 768px) {
-    
+    .logo {
+        display: none;
+    }
+
+    .home-title-container h1 {
+        @include variable-font-size(250, 481, 261.4, 768);
+    }
+
+    .home-header-image-container {
+        display: none;
+    }
 }
