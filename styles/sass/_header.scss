@@ -136,10 +136,7 @@ header.contact-page {
 
 //header PORTRAIT PHONES - SOME LANDSCAPE PHONES//
 @media (max-width: 480px) {
-    header ul {
-        justify-content: space-between;
-    }
-
+    
     header li {
         margin: 0;
 
@@ -149,6 +146,11 @@ header.contact-page {
     }
 
     .home-title-container h1 {
-        @include variable-font-size(180, 320, 250, 480);
+        @include variable-font-size(179, 320, 250, 480);
+    }
+
+    .blog-title-container h1,
+    .contact-title-container h1 {
+        font-size: 9.7rem;
     }
 }

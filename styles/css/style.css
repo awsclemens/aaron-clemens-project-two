@@ -463,9 +463,6 @@ header.contact-page {
 }
 
 @media (max-width: 480px) {
-  header ul {
-    justify-content: space-between;
-  }
   header li {
     margin: 0;
   }
@@ -473,7 +470,11 @@ header.contact-page {
     font-size: 3.2rem;
   }
   .home-title-container h1 {
-    font-size: calc((180/10 * 1rem) + (100vw - (320*1px))*((250 - 180)/(480 - 320)));
+    font-size: calc((179/10 * 1rem) + (100vw - (320*1px))*((250 - 179)/(480 - 320)));
+  }
+  .blog-title-container h1,
+  .contact-title-container h1 {
+    font-size: 9.7rem;
   }
 }
 
