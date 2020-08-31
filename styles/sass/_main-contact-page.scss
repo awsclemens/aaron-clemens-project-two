@@ -141,4 +141,20 @@
 
 //home-page PORTRAIT PHONES - SOME LANDSCAPE PHONES//
 @media (max-width: 480px) {
+    .contact-us {
+        box-shadow: 10px 10px $secondary;
+        width: calc(100% - 10px);
+        padding: 20px;
+        flex-direction: column;
+
+        .contact-name,
+        .contact-email {
+            width: 100%;
+        }
+
+        textarea {
+            height: 300px;
+        }
+    }
+
 }

@@ -18,3 +18,19 @@ footer {
         }
     }
 }
+
+//////////////////////////////////
+//footer media queries//
+//////////////////////////////////
+
+//home-page PORTRAIT PHONES - SOME LANDSCAPE PHONES//
+@media (max-width: 480px) {
+    footer {
+        font-size: 3rem;
+
+        a {
+            font-size: 3rem;
+        }
+    }
+    
+}

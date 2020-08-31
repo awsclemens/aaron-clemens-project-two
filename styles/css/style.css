@@ -238,7 +238,6 @@ img {
   max-width: 1280px;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid yellow;
 }
 
 .no-break {
@@ -1344,6 +1343,22 @@ header.contact-page {
   }
 }
 
+@media (max-width: 480px) {
+  .contact-us {
+    box-shadow: 10px 10px #FF8327;
+    width: calc(100% - 10px);
+    padding: 20px;
+    flex-direction: column;
+  }
+  .contact-us .contact-name,
+  .contact-us .contact-email {
+    width: 100%;
+  }
+  .contact-us textarea {
+    height: 300px;
+  }
+}
+
 footer {
   height: 60px;
   display: flex;
@@ -1358,4 +1373,13 @@ footer a {
 
 footer a:hover, footer a:focus {
   transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 3rem;
+  }
+  footer a {
+    font-size: 3rem;
+  }
 }
