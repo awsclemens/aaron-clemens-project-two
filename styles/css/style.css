@@ -1308,6 +1308,42 @@ header.contact-page {
   }
 }
 
+@media (max-width: 940px) {
+  .contact-info {
+    margin-top: 50px;
+    width: 35%;
+  }
+  .contact-info p {
+    font-size: 3.6rem;
+  }
+  .contact-us {
+    width: 65%;
+    right: calc(-7.5vw / 2);
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-contact-container .wrapper {
+    flex-direction: column;
+  }
+  .contact-info {
+    order: 2;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .contact-us {
+    position: static;
+    box-shadow: 15px 15px #FF8327;
+    width: calc(100% - 15px);
+    padding: 25px;
+  }
+  .contact-us .contact-name label,
+  .contact-us .contact-email label {
+    margin-left: 10px;
+  }
+}
+
 footer {
   height: 60px;
   display: flex;
