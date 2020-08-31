@@ -334,6 +334,12 @@ textarea {
   }
 }
 
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
 header {
   height: 100vh;
   padding-top: 40px;
@@ -452,6 +458,21 @@ header.contact-page {
   }
   .home-header-image-container {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header ul {
+    justify-content: space-between;
+  }
+  header li {
+    margin: 0;
+  }
+  header li a {
+    font-size: 3.2rem;
+  }
+  .home-title-container h1 {
+    font-size: calc((180/10 * 1rem) + (100vw - (320*1px))*((250 - 180)/(480 - 320)));
   }
 }
 

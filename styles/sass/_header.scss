@@ -5,7 +5,6 @@ header {
     height: 100vh;
     padding-top: 40px;
     
-
     ul {
         display:flex;
         justify-content: center;
@@ -132,5 +131,24 @@ header.contact-page {
 
     .home-header-image-container {
         display: none;
+    }
+}
+
+//header PORTRAIT PHONES - SOME LANDSCAPE PHONES//
+@media (max-width: 480px) {
+    header ul {
+        justify-content: space-between;
+    }
+
+    header li {
+        margin: 0;
+
+        a {
+            font-size: 3.2rem;
+        }
+    }
+
+    .home-title-container h1 {
+        @include variable-font-size(180, 320, 250, 480);
     }
 }
