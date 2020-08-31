@@ -830,6 +830,15 @@ header.contact-page {
   }
 }
 
+@media (max-width: 480px) {
+  .party-hosting .wrapper h2 {
+    font-size: calc((48/10 * 1rem) + (100vw - (320*1px))*((58.5 - 48)/(480 - 320)));
+  }
+  .party-hosting .wrapper p {
+    text-align: left;
+  }
+}
+
 .main-blog-container {
   padding-top: 100px;
   display: flex;

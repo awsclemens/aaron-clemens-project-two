@@ -424,6 +424,13 @@
 
 //home-page PORTRAIT PHONES - SOME LANDSCAPE PHONES//
 @media (max-width: 480px) {
-    
+    .party-hosting .wrapper {
+        h2 {
+            @include variable-font-size(48, 320, 58.5, 480);
+        }
+        p {
+            text-align: left;
+        }
+    }
 
 }
